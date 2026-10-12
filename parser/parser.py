@@ -14,7 +14,7 @@ V -> "arrived" | "came" | "chuckled" | "had" | "lit" | "said" | "sat" | "smiled"
 NONTERMINALS = """
 S -> NP VP | S Conj S
 NP -> N | Det N | Det AdjP N | AdjP N | NP PP | NP Conj NP
-VP -> V | V NP | VP PP | V Adv
+VP -> V | V NP | VP PP | V Adv | VP Conj VP
 PP -> P NP
 AdjP -> Adj | Adj AdjP
 """
